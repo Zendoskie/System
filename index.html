@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Programming Quiz</h1>
+        <div id="user-info" class="user-info">
+            <input type="text" id="user-name" placeholder="Enter your name">
+            <input type="text" id="user-year" placeholder="Enter your year level">
+            <button id="start-quiz">Start Quiz</button>
+        </div>
+        <div id="timer" style="font-size: 20px; margin-bottom: 20px;"></div>
+        <div id="quiz-container" style="display: none;">
+            <div id="user-details"></div>
+            <div id="question" class="question"></div>
+            <div id="answer-buttons" class="answer-buttons"></div>
+        </div>
+
+        <div id="score-container" class="score-container" style="display: none;">
+            <h2>Your Score: <span id="score"></span></h2>
+            <button id="restart-button">Restart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
