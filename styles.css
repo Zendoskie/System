@@ -1,12 +1,30 @@
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(270deg, #1e3c72, #2a5298);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 20px;
-    color: white;
-  }
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('image/who.gif');
+    background-size: cover;           /* Stretch to cover the whole page */
+    background-repeat: no-repeat;     /* Prevent repetition */
+    background-position: center;      /* Center the image */
+    color: white;                     /* Keep text readable */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);  /* Adjust darkness */
+    z-index: -1;
+}
+
   
   @keyframes gradient {
     0% { background-position: 0% 50%; }
