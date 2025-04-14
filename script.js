@@ -120,9 +120,9 @@ const trueFalseQuestions = [
     }
 ];
 
-startQuizButton.addEventListener('click', startGame);
+startQuizButton.addEventListener('click', startQuiz);
 
-function startGame() {
+function startQuiz() {
     const userName = userNameInput.value.trim();
     const userYear = userYearInput.value.trim();
 
